@@ -34,3 +34,8 @@ CREATE TABLE ProductTag (
     FOREIGN KEY (product_id) REFERENCES Product(id),
     FOREIGN KEY (tag_id) REFERENCES Tag(id)
 );
+
+CREATE TABLE Category (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    category_name VARCHAR(255) NOT NULL
+);
